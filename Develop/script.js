@@ -20,8 +20,11 @@ function generatePassword(){
   var passwordLength = 0;
   var password = "";
   var possibleCharacters = [];
-  
+
+  //prompts for password length
   passwordLength = prompt("How long would you like your password to be?\n(8-128 characters)");
+  
+  //Ensures password is valid length
   if(passwordLength > 128){
     alert(passwordLength + " is too many characters.\nPassword will be 128 characters.");
     passwordLength = 128;
@@ -30,6 +33,7 @@ function generatePassword(){
     passwordLength = 8;
   }
 
+  //prompts for character pool
   if(confirm("Do you want to use lowercase characters?", " ")){
     possibleCharacters = possibleCharacters.concat(characters.lowercase);
   }
@@ -43,13 +47,15 @@ function generatePassword(){
     possibleCharacters = possibleCharacters.concat(characters.specialCharacters);
   }
 
-  if(possibleCharacters.length == 0){
+  if(possibleCharacters.length == 0){ //Ensures a valid character pool
     alert("No characters were selected for use.\nLowercase and uppercase characters will be added to the password.");
     possibleCharacters = possibleCharacters.concat(characters.lowercase);
     possibleCharacters = possibleCharacters.concat(characters.uppercase);
   }
 
-  console.log(possibleCharacters);
+  for(var i = 0; i < passwordLength; i++){ //Compiles password from character pool
+    password = password + possibleCharacters[Math.floor(Math.random() * possibleCharacters.length)];
+  }
   return password;
 }
 
