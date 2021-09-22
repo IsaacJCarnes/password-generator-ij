@@ -1,13 +1,9 @@
 # password-generator-ij
-Operates through prompts to allow the user to customize how they want to generate a random password.
+Pressing the 'Generate Password' button prompts for password configuration settings and then provides the user a randomly generated password from the preferences they selected.
+This is useful for creating passwords for accounts, you want your password to be secure and some websites require diffetrent types of characters, this website makes that process simple and fast.
 
-Checklist:
-Create prompts when generate password button is clicked: done
-Prompts for password length: done
-Prompts for if password includes lowercase characters: done
-Prompts for if password includes uppercase characters: done
-Prompts for if password includes number characters: done
-Prompts for if password includes special characters: done
-Validate prompt selection, do not allow selecting no characters or invalid password length: done
-Generate and return password: done
-Either display password on page or in alert: done
+To use the website first press the 'generate password' button. Then fill out the prompts as they come up, the length must be between 8 and 125, there must be at least one set of characters added. However if either of these requirements are not met the website will alter the password to keep it within basic requirements.
+
+Develop\Images\03-javascript-homework-demo.png
+
+Author: Isaac Joshua Carnes
