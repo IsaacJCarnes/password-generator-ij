@@ -5,6 +5,6 @@ This is useful for creating passwords for accounts, you want your password to be
 To use the website first press the 'generate password' button. Then fill out the prompts as they come up, the length must be between 8 and 125, there must be at least one set of characters added. However if either of these requirements are not met the website will alter the password to keep it within basic requirements.
 
 Here is a screenshot of the website
-![Alt text](IsaacJCarnes.github.com/password-generator-ij/Develop/Images/03-javascript-homework-demo.png "Website Screenshot")
+![Alt text](https://github.com/IsaacJCarnes/password-generator-ij/blob/main/Develop/Images/03-javascript-homework-demo.png "Website Screenshot")
 
 Author: Isaac Joshua Carnes
